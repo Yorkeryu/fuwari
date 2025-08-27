@@ -17,17 +17,17 @@ const fakeResult: SearchResult[] = [
 	{
 		url: url("/"),
 		meta: {
-			title: "This Is a Fake Search Result",
+			title: "这是一个假的搜索结果",
 		},
 		excerpt:
-			"Because the search cannot work in the <mark>dev</mark> environment.",
+			"因为搜索不能在 <mark>开发模式</mark> 中运行.",
 	},
 	{
 		url: url("/"),
 		meta: {
-			title: "If You Want to Test the Search",
+			title: "如果你想测试搜索",
 		},
-		excerpt: "Try running <mark>npm build && npm preview</mark> instead.",
+		excerpt: "尝试在 <mark>npm build 或 npm preview</mark> 中运行.",
 	},
 ];
 
@@ -78,7 +78,7 @@ const search = async (keyword: string, isDesktop: boolean): Promise<void> => {
 		result = searchResults;
 		setPanelVisibility(result.length > 0, isDesktop);
 	} catch (error) {
-		console.error("Search error:", error);
+		console.error("搜索异常:", error);
 		result = [];
 		setPanelVisibility(false, isDesktop);
 	} finally {
@@ -110,7 +110,7 @@ onMount(() => {
 		});
 		document.addEventListener("pagefindloaderror", () => {
 			console.warn(
-				"Pagefind load error event received. Search functionality will be limited.",
+				"收到Pagefind加载错误事件。搜索功能将受限。",
 			);
 			initializeSearch(); // Initialize with pagefindLoaded as false
 		});

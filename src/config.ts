@@ -9,33 +9,33 @@ import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
 	title: "Fish's blog",
-	subtitle: "",
-	lang: "zh-CN", // Language code, e.g. 'en', 'zh-CN', 'ja', etc.
+	subtitle: "欢迎",
+	lang:"zh_CN", // Language code, e.g. 'en', 'zh-CN', 'ja', etc.
 	themeColor: {
 		hue: 170, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
 		fixed: true, // Hide the theme color picker for visitors
 	},
 	banner: {
-		enable: false,
-		src: "", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+		enable: true,
+		src: "https://bing.img.run/1920x1080.php", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
 		credit: {
-			enable: false, // Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			enable: true, // Display the credit text of the banner image
+			text: "From Microsoft Bing", // Credit text to be displayed
+			url: "https://www.microsoft.com/zh-cn/bing/features/bing-wallpaper", // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	toc: {
 		enable: true, // Display the table of contents on the right side of the post
-		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
+		depth: 3, // Maximum heading depth to show in the table, from 1 to 3
 	},
 	favicon: [
 		// Leave this array empty to use the default favicon
-		// {
-		//   src: 'https://2x.nz/_astro/2024-10-15-17-49-30-image.Bgbcm3ir_Z11HHCr.webp',    // Path of the favicon, relative to the /public directory
-		//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
-		// }
+		{
+		  src: '/_image/?href=%2F%40fs%2FD%3A%2Fyork%2Fblog%2Ffuwari%2Fsrc%2Fassets%2Fimages%2Fdemo-avatar.png%3ForigWidth%3D399%26origHeight%3D399%26origFormat%3Dpng&w=399&h=399&f=webp',    // Path of the favicon, relative to the /public directory
+		  theme: undefined,              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
+		  sizes: undefined,              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+		}
 	],
 };
 
