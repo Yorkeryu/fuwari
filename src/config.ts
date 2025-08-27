@@ -32,7 +32,7 @@ export const siteConfig: SiteConfig = {
 	favicon: [
 		// Leave this array empty to use the default favicon
 		{
-		  src: '/_image/?href=%2F%40fs%2FD%3A%2Fyork%2Fblog%2Ffuwari%2Fsrc%2Fassets%2Fimages%2Fdemo-avatar.png%3ForigWidth%3D399%26origHeight%3D399%26origFormat%3Dpng&w=399&h=399&f=webp',    // Path of the favicon, relative to the /public directory
+		  src: 'https://www.510280.dpdns.org/_astro/demo-avatar.Bvu0B3I9_Z1fu40z.webp',    // Path of the favicon, relative to the /public directory
 		  theme: undefined,              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
 		  sizes: undefined,              // (Optional) Size of the favicon, set only if you have favicons of different sizes
 		}
