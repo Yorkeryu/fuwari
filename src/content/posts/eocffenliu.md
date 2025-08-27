@@ -24,11 +24,11 @@ lang: 'zh_cn'
 2. 托管一个域名（建议为二级域名，以fl.114514.com为例）
 3. 然后添加以下解析：
 
-![image-20250827190047622](assets\images\image-20250827190047622.png)
+![image-20250827190047622](./assets\images\image-20250827190047622.png)
 
 红框部分填写你的eo cname：
 
-![image-20250827190347886](assets\images\image-20250827190347886.png)
+![image-20250827190347886](./assets\images\image-20250827190347886.png)
 
 绿框部分填写cf cdn ip网站，推荐网站：
 
@@ -85,8 +85,8 @@ fbi.gov
 
 4. 最后在你博客的dns解析页面添加cname指向刚刚的域名即可（如a.fl.114514.com）
 
-![image-20250827191600375](assets/images/image-20250827191600375.png)
+![image-20250827191600375](./assets/images/image-20250827191600375.png)
 
 5. 成功！
 
-![image-20250827191833381](assets/images/image-20250827191833381.png)
+![image-20250827191833381](./assets/images/image-20250827191833381.png)
