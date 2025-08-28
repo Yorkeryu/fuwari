@@ -87,6 +87,24 @@ fbi.gov
 
 ![image-20250827191600375](./assets/images/image-20250827191600375.png)
 
-5. 成功！
+## 套上EO证书
+
+1. 回到dnspod，先暂时把境内境外解析全部改为eo的cname：
+
+![image-20250828203421296](./assets/images/image-20250828203421296.png)
+
+2. 申请证书：
+
+![image-20250828203550529](./assets/images/image-20250828203550529.png)
+
+3. 成功生效：
 
 ![image-20250827191833381](./assets/images/image-20250827191833381.png)
+
+4. 将dns记录更改回来：
+
+![image-20250828203724041](./assets/images/image-20250828203724041.png)
+
+5. 成功！
+
+![image-20250828203818513](./assets/images/image-20250828203818513.png)
