@@ -4,7 +4,7 @@ published: 2025-08-27
 description: '给网站cdn分流加速'
 image: ''
 tags: ["cf","eo"]
-category: 'cdn'
+category: '置顶','cdn'
 draft: false 
 lang: 'zh_cn'
 ---
