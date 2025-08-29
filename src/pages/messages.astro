@@ -1,0 +1,31 @@
+---
+import ArchivePanel from "@components/ArchivePanel.svelte";
+import I18nKey from "@i18n/i18nKey";
+import { i18n } from "@i18n/translation";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { getSortedPostsList } from "../utils/content-utils";
+
+const sortedPostsList = await getSortedPostsList();
+---
+
+<MainGridLayout title={i18n(I18nKey.Top)}>
+    <!-- <ArchivePanel sortedPosts={sortedPostsList} client:only="svelte"></ArchivePanel>-->
+    <div class="w-full inline-block bg-[var(--card-bg)] text-white font-bold px-4 py-2 rounded-lg">
+        <div class="h-4"></div>
+        <span class="text-white font-bold text-3xl">通知</span>
+        <!-- 这是换行+空白 --><div class="h-4"></div>
+        <div class="h-4"></div>
+        <span class="text-white text-xl">2025/8/7:</span>
+        <p></p>
+        <span class="text-white text-l">网站分流域名：</span>
+        <a class="text-white text-l underline" href="https://by.510280.dpdns.org/">by.510280.dpdns.org</a>
+        <div class="h-4"></div>
+        <div class="h-4"></div>
+        <span class="text-white text-xl">2025/8/29:</span>
+        <p></p>
+        <span class="text-white text-l">由于dpdns被墙，网站新增</span>
+        <a class="text-white text-l underline" href="https://www.fishim.zone.id/">fishim.zone.id</a>
+        <span class="text-white text-l">域名，原域名仍可以访问</span>
+    </div>
+</MainGridLayout>
+

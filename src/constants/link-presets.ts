@@ -15,4 +15,8 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		name: "历程",
 		url: "/archive/",
 	},
+	[LinkPreset.Top]: {
+		name: "通知",
+		url: "/messages/",
+	},
 };
